@@ -1,0 +1,36 @@
+<form class="validate-form mt-3" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+    <div class="text-center">
+
+        <h1 class="h3 mb-3 fw-bold">Log In</h1>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" formControlName="username"
+            placeholder="name@example.com">
+        <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+            formControlName="password">
+        <label for="floatingPassword">Password</label>
+        <span id="toggle_pwd" class="bi bi-eye-fill field_icon"></span>
+    </div>
+
+    <div class="mb-3 mt-3 text-md-end">
+        <a href="reset-password.html" class="btn-link-primary">Forgot Password?</a>
+    </div>
+    <div class="hstack justify-content-between">
+        <div class="singup-btn">
+            <a href="/admin/singup" class="btn-link-primary">Sing Up</a>
+        </div>
+        <a class="btn btn-lg btn-primary" (click)="onSubmit()" >Sign in</a>
+    </div>
+
+    <div class="mt-4 text-center">Unable to login? We are here <br><a href="#"
+            class="btn-link-primary">dav@gmail.com</a></div>
+
+
+
+
+
+</form>
